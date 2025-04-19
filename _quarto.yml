@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  title: "EV Insights"
 
 website:
   title: EV Insights
@@ -9,6 +10,13 @@ website:
     background: primary
     search: true
     title: false
+    left:
+      - text: "EV Insights"
+        href: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/isfarbaset/ev-insights
+        aria-label: GitHub
 
   sidebar:
     style: floating
@@ -16,12 +24,6 @@ website:
     contents:
       - text: Introduction
         file: index.qmd
-      - text: Code
-        href: https://github.com/anly501/dsan-5000-project-isfarbaset
-      - text: Data
-        contents:
-          - text: Code
-            href: https://github.com/anly501/dsan-5000-project-isfarbaset
       - text: Data Gathering
         contents:
           - text: Yahoo
@@ -33,7 +35,7 @@ website:
           - text: News API
             file: data-gathering/news-api.ipynb
           - text: Wikipedia
-            file: data-gathering/01-wiki-crawl.ipynb
+            file: data-gathering/wikipedia.ipynb
       - text: Data Cleaning
         file: data-cleaning/data_cleaning.ipynb
       - text: Data Exploration

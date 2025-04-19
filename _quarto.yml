@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: EV Insights
+  site-url: "/"
+  navbar:
+    background: primary
+    search: true
+    title: false
+
+  sidebar:
+    style: floating
+    search: true
+    contents:
+      - text: Introduction
+        file: index.qmd
+      - text: Code
+        href: https://github.com/anly501/dsan-5000-project-isfarbaset
+      - text: Data
+        contents:
+          - text: Code
+            href: https://github.com/anly501/dsan-5000-project-isfarbaset
+      - text: Data Gathering
+        contents:
+          - text: Yahoo
+            file: data-gathering/yahoo.ipynb
+          - text: Rapid API
+            file: data-gathering/rapid-api.ipynb
+          - text: Cars API
+            file: data-gathering/cars-api.ipynb
+          - text: News API
+            file: data-gathering/news-api.ipynb
+          - text: Wikipedia
+            file: data-gathering/01-wiki-crawl.ipynb
+      - text: Data Cleaning
+        file: data-cleaning/data_cleaning.ipynb
+      - text: Data Exploration
+        file: eda/eda.ipynb
+      - text: Naïve Bayes
+        file: naive-bayes/naive_bayes.ipynb
+      - text: Dimensionality Reduction
+        file: dim-reduction/dim-reduction.ipynb
+      - text: Clustering
+        file: clustering/clustering.ipynb
+      - text: Decision Trees
+        file: decision-tree/classification-and-regression.ipynb
+      - text: ARM
+        file: ARM/arm.ipynb
+      - text: Conclusions
+        file: conclusions.ipynb
+   
+format:
+  html:
+    theme: cosmo
+    toc: true
